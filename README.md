@@ -2,6 +2,8 @@
 
 This repo contains my data-driven `pagedown` cv for my academic and consulting work. This repo is forked from Nick Strayer's version of a `pagedown` cv. Please see below for his original `README.md`
 
+From Nick Strayer's `README.md` at `nstrayer/cv`:
+
 ## My pagedown rendered CV
 
 __Switch to googlesheets__
