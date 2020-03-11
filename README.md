@@ -1,6 +1,6 @@
 # Description
 
-This repo contains my data-driven `pagedown` cv for my academic and consulting work. This repo is forked from Nick Strayer's version of a `pagedown` cv. Please see below for his original `README.md`
+This repo contains my data-driven [pagedown package](https://pagedown.rbind.io) cv for my academic and consulting work. This repo is forked from Nick Strayer's version of a [pagedown](https://pagedown.rbind.io) cv. Please see below for his original `README.md`
 
 From Nick Strayer's `README.md` at `nstrayer/cv`:
 
