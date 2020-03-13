@@ -6,7 +6,7 @@ output:
   pagedown::html_resume:
     css: ['css/styles.css', 'resume']
     # set it to true for a self-contained HTML page but it'll take longer to render
-    self_contained: true
+    self_contained: false
 ---
 
 ```{r, include=FALSE}
@@ -105,7 +105,7 @@ contact_info %>%
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Last updated on `r Sys.Date()`.
+Last updated `r Sys.Date()`.
 
 
 Main
@@ -158,6 +158,8 @@ print_section(position_data, 'education')
 \newpage
 
 :::aside
+<i class='ai ai-google-scholar'></i> [S. Workman - Google Scholar](https://scholar.google.com/citations?user=kW67_MkAAAAJ&hl=en)
+
 ##### Interests
 * Public Policy
 * Regulation
@@ -181,6 +183,7 @@ print_section(position_data, 'education')
 * The politics of food security
 :::
 
+
 Books {data-icon=book data-concise=true}
 --------------------------------------------------------------------------------
 
@@ -188,91 +191,105 @@ Books {data-icon=book data-concise=true}
 print_section(position_data, 'book')
 ```
 
+
 Articles {data-icon=paper-plane data-concise=true}
 --------------------------------------------------------------------------------
 
-Research Experience {data-icon=laptop}
---------------------------------------------------------------------------------
-
 ```{r}
-print_section(position_data, 'research_positions')
+print_section(position_data, 'article')
 ```
 
-
-
-Industry Experience {data-icon=suitcase}
+Book Chapters {data-icon=book-open data-concise=true .break-after-me}
 --------------------------------------------------------------------------------
 
-::: aside
 ```{r}
-print_text_block(text_blocks, 'industy_experience_aside')
+print_section(position_data, 'chapter')
+```
+
+Blogs {data-icon=feather-alt data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'blog')
+```
+
+Interviews {data-icon=podcast data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'interview')
+```
+
+\newpage
+
+Reviews & Responses {data-icon=binoculars data-concise=true }
+------------------------------------------------------------------------
+```{r}
+print_section(position_data, 'reviews_responses')
+```
+
+Grants & Awards {data-icon=award data-concise=true}
+------------------------------------------------------------------------
+:::aside
+```{r}
+print_text_block(text_blocks, 'funding_reviewer')
 ```
 :::
 
 ```{r}
-print_section(position_data, 'industry_positions')
+print_section(position_data, 'grant')
 ```
 
-<!-- These breaks just force a new page so section doesnt get cut off -->
-<br>
-<br>
-<br>
+\newpage
 
-Teaching Experience {data-icon=chalkboard-teacher}
+Fellowships & Scholarships {data-icon=medal data-concise=true}
 --------------------------------------------------------------------------------
 
-::: aside
 ```{r}
-print_text_block(text_blocks, 'teaching_experience_aside')
+print_section(position_data, 'fellowships_scholarships')
+```
+
+Teaching
+--------------------------------------------------------------------------------
+
+:::aside
+```{r}
+print_text_block(text_blocks, 'teaching_approach')
+```
+
+```{r}
+print_text_block(text_blocks, 'phd_mentees')
+```
+:::
+
+Graduate Teaching {data-icon=school data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'grad_teaching')
+```
+
+Undergraduate Teaching {data-icon=chalkboard-teacher data-concise=true .break-before-me}
+--------------------------------------------------------------------------------
+:::aside
+```{r}
+print_text_block(text_blocks, 'phd_comms')
+```
+
+```{r}
+print_text_block(text_blocks, 'undergrad_mentees')
 ```
 :::
 
 ```{r}
-print_section(position_data, 'teaching_positions')
+print_section(position_data, 'undergrad_teaching')
 ```
 
-
-Selected Data Science Writing {data-icon=chart-line}
---------------------------------------------------------------------------------
-
-::: aside
-```{r}
-print_text_block(text_blocks, 'data_science_writing_aside')
-```
-:::
-
-```{r}
-print_section(position_data, 'data_science_writings')
-```
-
-
-
-Selected Press (About)  {data-icon=newspaper}
+Public Lectures {data-icon=microphone-alt data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
-print_section(position_data, 'about_me_press')
-```
-
-
-<br>
-<br>
-
-
-Selected Press (By)  {data-icon=newspaper}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'by_me_press')
-```
-
-
-
-Selected Publications, Posters, and Talks {data-icon=book}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'academic_articles')
+print_section(position_data, 'lecture')
 ```
 
 
