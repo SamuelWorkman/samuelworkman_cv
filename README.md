@@ -2,6 +2,12 @@
 
 This repo contains my data-driven [pagedown package](https://pagedown.rbind.io) cv for my academic and consulting work. This repo is forked from Nick Strayer's version of a [pagedown](https://pagedown.rbind.io) cv. Please see below for his original `README.md`
 
+# To Do:
+- [ ] Move Skills & Experience to text-block
+- [ ] parse positions sheet
+- [ ] create different sheet for two-page cv
+
+
 From Nick Strayer's `README.md` at `nstrayer/cv`:
 
 ## My pagedown rendered CV
