@@ -95,11 +95,12 @@ sup {
 }
 
 .skill-bar {
-  color: white;
+  color: red;
   padding: 0.1rem 0.25rem;
   margin-top: 3px;
   position: relative;
   width: 100%;
+  height: 25%;
 }
 
 
