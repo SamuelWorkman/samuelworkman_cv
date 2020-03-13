@@ -6,7 +6,7 @@ output:
   pagedown::html_resume:
     css: ['css/styles.css', 'resume']
     # set it to true for a self-contained HTML page but it'll take longer to render
-    self_contained: false
+    self_contained: true
 ---
 
 ```{r, include=FALSE}
@@ -37,11 +37,11 @@ sheet_is_publicly_readable <- TRUE
 # Is the goal of this knit to build a document that is exported to PDF? If so
 # set this to true to have links turned into footnotes at the end of the
 # document
-PDF_EXPORT <- FALSE
+PDF_EXPORT <- TRUE
 
 
-CV_PDF_LOC <- "https://github.com/SamuelWorkman/samuelworkman_cv/raw/master/samuelworkman_cv.pdf"
-CV_HTML_LOC <- "samuelworkman.org/cv/"
+CV_PDF_LOC <- "https://github.com/SamuelWorkman/sworkman_cv/raw/master/sworkman_cv.pdf"
+CV_HTML_LOC <- "http://www.samuelworkman.org/cv/"
 
 
 # A global (gasp) variable that holds all the links that were inserted for
@@ -292,7 +292,108 @@ Public Lectures {data-icon=microphone-alt data-concise=true}
 print_section(position_data, 'lecture')
 ```
 
+Conference Presentations {data-icon=project-diagram .no-timeline}
+--------------------------------------------------------------------------------
+:::aside
+```{r}
+print_text_block(text_blocks, 'conf_chair')
+```
 
+```{r}
+print_text_block(text_blocks, 'conf_discussant')
+```
+:::
+
+```{r}
+print_text_block(text_blocks, 'conf_papers')
+```
+
+Positions in Discipline {data-icon=sitemap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'discipline_positions')
+```
+
+Service {data-icon=tape data-concise=true}
+--------------------------------------------------------------------------------
+
+University
+---------
+
+```{r}
+print_section(position_data, 'university_service')
+```
+
+Department
+---
+
+```{r}
+print_section(position_data, 'department_service')
+```
+
+References {data-icon=pen-alt .break-before-me}
+---
+
+**Professor Bryan D. Jones**
+: *J.J. “Jake” Pickle Regents Chair of Congressional Studies* 
+: Department of Government $\circ$ The University of Texas at Austin $\circ$ 1 University Station A1800 $\circ$ Austin, TX 78712-0119 $\circ$ Ph. 512-471-9973 $\circ$ bdjones@austin.utexas.edu
+
+
+**Professor Frank R. Baumgartner**
+: *Richard J. Richardson Distinguished Professor of Political Science* 
+: The University of North Carolina at Chapel Hill $\circ$ 358 Hamilton Hall $\circ$ Campus Box 3265 $\circ$ Chapel Hill, NC 27599-3265 $\circ$ Ph. 919-962-
+3041 $\circ$ Frankb@unc.edu
+
+
+**Professor David E. Lewis**
+: *William R. Kenan, Jr. Professor of Political Science* 
+: Department of Political Science $\circ$ Vanderbilt University $\circ$ PMB 505 $\circ$ 230 Appleton Place $\circ$ Nashville, TN 37203-5721 $\circ$ Ph. 615-322-6228 $\circ$
+david.e.lewis@vanderbilt.edu
+
+
+**Professor Andrew B. Whitford**
+: *Alexander M. Crenshaw Professor of Public Policy*
+: School of Public and International Affairs $\circ$ Department of Public Administration and Policy $\circ$ University of Georgia $\circ$ Baldwin Hall 412 $\circ$ 355 South Jackson Street $\circ$ Athens, GA 30602 $\circ$ Ph. 706-542-2898 $\circ$ aw@uga.edu
+
+
+**Professor Christopher M.Weible**
+: School of Public Affairs $\circ$ University of Colorado, Denver $\circ$ 1380 Lawrence Street, Suite 500 $\circ$ Denver, CO 80217-3364 $\circ$ Ph. 303-315-2010 $\circ$ chris.weible@ucdenver.edu
+
+
+**Professor Anthony M. Bertelli**
+: *Currently in residence at Bocconi University*
+: *Sherwin-Whitmore Chair of Liberal Arts*
+: Penn State School of Public Policy $\circ$ Penn State University $\circ$ 322 Pond Lab $\circ$ University Park, PA 16802 $\circ$ Ph. +39 347 3984 249 $\circ$ anthony.bertelli@unibocconi.it
+
+**Professor Peter Bjerre Mortensen**
+: Department of Political Science and Government $\circ$ Bartholins All´e 7 $\circ$ Building 1340, Room 333 $\circ$ 8000 Aarhus C $\circ$ Denmark $\circ$ Peter@ps.au.dk
+
+
+**Professor Martin Lodge**
+: *Professor of Political Science & Public Policy* 
+: Department of Government $\circ$ London School of Economics $\circ$ Houghton Street $\circ$ CON 3.08, Connaught House $\circ$ London WC2A 2AE United Kingdom $\circ$ Ph. +44 (0)20 7849 4627 $\circ$ m.lodge@lse.ac.uk
+
+
+**Professor John D.Wilkerson**
+: *Director, Center for American Politics and Public Policy* 
+: Department of Political Science $\circ$ University of Washington $\circ$ 101 Gowen Hall, Box 353530 $\circ$ Seattle, WA 98105-3530 $\circ$ Department of Political
+Science $\circ$ University of Washington $\circ$ 101 Gowen Hall, Box 353530 $\circ$ Seattle, WA 98105-3530 $\circ$ Ph. 206-543-8030 $\circ$ jwilker@u.washington.edu
+
+
+**Professor Peter John**
+: *Professor of Political Science & Public Policy* 
+: Department of Political Science $\circ$ The School of Public Policy $\circ$ University College London $\circ$ The Rubin Building $\circ$ 29/30 Tavistock Sq., Room 1.07 $\circ$ London, WC1H 9QU United Kingdom $\circ$ Ph. +44 (0)20 3108 1145 (x5114) $\circ$ peter.john@ucl.ac.uk
+
+
+**Professor Andrew J. Karch**
+: *Arleen C. Carlson Professor* 
+: Department of Political Science $\circ$ University of Minnesota $\circ$ 1211 Social
+Science Building $\circ$ 267 19th Ave S Minneapolis, MN 55455 $\circ$ Ph. 612-624-2537 $\circ$ ajkarch@umn.edu
+
+**Professor Peter J. May**
+: *Donald R. Matthews Distinguished Professor Emeritus of American Politics* 
+: Department of Political Science $\circ$ University of Washington $\circ$ 101 Gowen Hall, Box 353530 $\circ$ Seattle, WA 98105-3530 $\circ$ Ph. 206-543-2780 $\circ$ pmay@u.washington.edu
 
 ```{r}
 if(PDF_EXPORT){
