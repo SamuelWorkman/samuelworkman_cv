@@ -7,3 +7,4 @@ This repo contains my data-driven [pagedown package](https://pagedown.rbind.io) 
 - [ ] parse positions sheet
 - [ ] create different sheet for two-page cv
 - [ ] Move references to separate file.
+- [ ] Add language bar back.
