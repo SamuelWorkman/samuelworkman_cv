@@ -63,7 +63,7 @@ position_data <- position_data %>%
     section = case_when(
       section %in% c('academic', 'private') ~ 'positions', 
       section %in% c('book', 'article', 'grant') ~ 'scholarship',
-      section %in% c('blog', 'interview') ~ 'popular',
+      section %in% c('blog', 'interview', 'certificate') ~ 'popular',
       section %in% c('grad_teaching', 'undergrad_teaching') ~ 'courses',
       TRUE ~ section
     )
