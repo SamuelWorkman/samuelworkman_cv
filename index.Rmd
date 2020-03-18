@@ -189,14 +189,12 @@ print_section(position_data, 'certificate')
 ```
 
 
-Books {data-icon=book data-concise=true}
+Books {data-icon=book data-concise=true .page-break-after}
 --------------------------------------------------------------------------------
 
 ```{r}
 print_section(position_data, 'book')
 ```
-
-\newpage
 
 Grants & Awards {data-icon=award data-concise=true}
 ------------------------------------------------------------------------
