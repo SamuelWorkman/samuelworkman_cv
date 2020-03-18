@@ -6,5 +6,5 @@ This repo contains my data-driven [pagedown package](https://pagedown.rbind.io) 
 - [ ] Move Skills & Experience to text-block
 - [ ] parse positions sheet
 - [ ] create different sheet for two-page cv
-- [ ] Move references to separate file.
+- [x] Move references to separate file.
 - [ ] Add language bar back.
