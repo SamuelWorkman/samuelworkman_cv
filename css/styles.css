@@ -37,10 +37,30 @@ sup {
 /* Customize some of the sizing variables */
 :root {
   --sidebar-width: 12rem; /* Shrink sidebar width  */
-  --sidebar-background-color: #c4e6b5; /* Make sidebar blue */
+  --sidebar-background-color: #eee8d5; /*#f0ead6; eggshell /* Make sidebar blue */
   --sidebar-horizontal-padding: 0.01in; /* Reduce sidebar padding */
   --decorator-outer-dim: 10px; /* Make position deliniating circles larger */
-  --decorator-border: 2px solid #bdd7e7; /* Make timeline a blue as well*/
+  --decorator-border: 2px solid #268bd2; /*#bdd7e7; /* Make timeline a blue as well*/
+}
+
+/*unvisited link*/
+a:link {
+color: #268bd2;
+}
+
+/* visited link */
+a:visited {
+  color: #839496;
+}
+
+/* mouse over link */
+a:hover {
+  color: #dc322f;
+}
+
+/* selected link */
+a:active {
+  color: #859900;
 }
 
 .details .place {
@@ -66,9 +86,10 @@ sup {
   display: none;
 }
 
-/* Move closer to start and up towards header */
+/* Icon Color in the Siderbar */
 .aside ul {
   padding-left: 1rem;
+  color: #cb4b16;
 }
 
 .aside li::before {

@@ -62,7 +62,8 @@ position_data <- position_data %>%
     # Build some custom sections by collapsing others
     section = case_when(
       section %in% c('academic', 'private') ~ 'positions', 
-      section %in% c('book', 'article', 'grant') ~ 'scholarship',
+      section %in% 'grant' ~ 'grant',
+      section %in% c('book', 'article') ~ 'scholarship',
       section %in% c('blog', 'interview', 'certificate') ~ 'popular',
       section %in% c('grad_teaching', 'undergrad_teaching') ~ 'courses',
       TRUE ~ section
@@ -130,6 +131,13 @@ Education {data-icon=graduation-cap data-concise=true}
 
 ```{r}
 position_data %>% print_section('education')
+```
+
+Current Grant {data-icon=award}
+-------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('grant')
 ```
 
 Scholarship {data-icon=feather-alt data-concise=true}
