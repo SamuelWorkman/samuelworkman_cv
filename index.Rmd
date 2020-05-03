@@ -229,6 +229,13 @@ Blogs {data-icon=feather-alt data-concise=true}
 print_section(position_data, 'blog')
 ```
 
+Popular Writing on Data & Statistics {data-icon=rss-square data-concise=true .page-break-after}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'medium')
+```
+
 Interviews {data-icon=podcast data-concise=true}
 --------------------------------------------------------------------------------
 
@@ -270,7 +277,7 @@ print_text_block(text_blocks, 'phd_comms_ut')
 ```
 :::
 
-Graduate Teaching {data-icon=school data-concise=true}
+Graduate Teaching {data-icon=school data-concise=true .page-break-after}
 --------------------------------------------------------------------------------
 
 ```{r}

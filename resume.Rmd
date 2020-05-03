@@ -1,6 +1,6 @@
 ---
 title: Samuel Workman 2-Page CV"
-author: Samuel Workman
+author: Samuel Workman, Ph.D.
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
@@ -64,7 +64,7 @@ position_data <- position_data %>%
       section %in% c('academic', 'private') ~ 'positions', 
       section %in% 'grant' ~ 'grant',
       section %in% c('book', 'article') ~ 'scholarship',
-      section %in% c('blog', 'interview', 'certificate') ~ 'popular',
+      section %in% c('medium', 'interview', 'certificate') ~ 'popular',
       section %in% c('grad_teaching', 'undergrad_teaching') ~ 'courses',
       TRUE ~ section
     )
@@ -103,7 +103,7 @@ Last updated `r Sys.Date()`.
 Main
 ================================================================================
 
-Samuel Workman {#title}
+Samuel Workman, Ph.D. {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -133,7 +133,7 @@ Education {data-icon=graduation-cap data-concise=true}
 position_data %>% print_section('education')
 ```
 
-Current Grant {data-icon=award}
+Current Grant {data-icon=award .page-break-after}
 -------------------------------------------------------------------------
 
 ```{r}
