@@ -64,7 +64,7 @@ position_data <- position_data %>%
       section %in% c('academic', 'private') ~ 'positions', 
       section %in% 'grant' ~ 'grant',
       section %in% c('book', 'article') ~ 'scholarship',
-      section %in% c('medium', 'interview', 'certificate') ~ 'popular',
+      section %in% c('tds', 'interview', 'certificate') ~ 'popular',
       section %in% c('grad_teaching', 'undergrad_teaching') ~ 'courses',
       TRUE ~ section
     )
