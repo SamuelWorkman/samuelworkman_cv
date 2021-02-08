@@ -76,7 +76,7 @@ if(PDF_EXPORT){
 
 Aside
 ================================================================================
-![logo](img/news_small.jpg){width=80%}
+![logo](img/loadings_bar.jpg){width=100%}
 
 
 ```{r}
@@ -222,6 +222,13 @@ Book Chapters {data-icon=book-open data-concise=true .break-after-me}
 print_section(position_data, 'chapter')
 ```
 
+Popular Writing {data-icon=pen-nib data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'popular')
+```
+
 Blogs {data-icon=feather-alt data-concise=true}
 --------------------------------------------------------------------------------
 
@@ -339,6 +346,13 @@ Department
 
 ```{r}
 print_section(position_data, 'department_service')
+```
+
+Journal Reviewer
+---
+
+```{r}
+print_text_block(text_blocks, 'journal_reviewer')
 ```
 
 ```{r}
