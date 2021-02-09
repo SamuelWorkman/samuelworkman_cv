@@ -63,8 +63,8 @@ position_data <- position_data %>%
     section = case_when(
       section %in% c('academic', 'private') ~ 'positions', 
       section %in% 'grant' ~ 'grant',
-      section %in% c('book', 'article') ~ 'scholarship',
-      section %in% c('tds', 'interview', 'certificate') ~ 'popular',
+      section %in% c('book', 'article', 'chapter') ~ 'scholarship',
+      section %in% c('popular', 'interview', 'certificate') ~ 'popular',
       section %in% c('grad_teaching', 'undergrad_teaching') ~ 'courses',
       TRUE ~ section
     )
@@ -75,9 +75,7 @@ position_data <- position_data %>%
 
 Aside
 ================================================================================
-
-
-<!--![logo](img/news_small.jpg){width=80%}-->
+![logo](img/loadings_bar.jpg){width=100%}
 
 Contact {#contact}
 --------------------------------------------------------------------------------
@@ -115,10 +113,10 @@ print_text_block(text_blocks, 'intro')
 * Policy research, data management, statistical analysis & modeling, presentation, reporting & data visualization, machine learning
 * Project Management, grant writing, team leadership & coordination, public speaking
 * Market, sales, and inventory analysis, reporting, and visualization, data-driven decision-making and management
-* Languages: $R$ <!--`r fontawesome::fa("r-project", fill = "steelblue", height = 13)`-->, $\LaTeX$, SAS, SPSS, VBA, SQL, Markdown, CSS, HTML (limited)
-* Applications: Rstudio, WinEdt, Beamer, binb, xaringan, MS Word, MS Excel, MS PowerPoint, SQLite, MS Access
+* Languages: `r fontawesome::fa("r-project", fill = "steelblue", height = 13)`, $\LaTeX$, SAS, SPSS, VBA, SQL, Markdown, CSS, HTML
+* Applications: Rstudio, WinEdt, Beamer, binb, xaringan, MS Word, Excel, PowerPoint, Access, SQLite
 
-Selected Positions {data-icon=user-tie}
+Academic Position {data-icon=user-tie}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -140,24 +138,22 @@ Current Grant {data-icon=award .page-break-after}
 position_data %>% print_section('grant')
 ```
 
-Scholarship {data-icon=feather-alt data-concise=true}
+In Progress {data-icon=tools data-concise=true}
+-------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('in_progress')
+```
+
+Forthcoming Scholarship {data-icon=feather-alt data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
 position_data %>% print_section('scholarship')
 ```
 
-Popular & Recent {data-icon=podcast data-concise=true}
+Popular Writing {data-icon=podcast data-concise=true}
 --------------------------------------------------------------------------------
 ```{r}
 position_data %>% print_section('popular')
 ```
-
-Upcoming Courses {data-icon=chalkboard-teacher data-concise=true}
---------------------------------------------------------------------------------
-```{r}
-position_data %>% print_section('courses')
-```
-
-
-
