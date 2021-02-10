@@ -8,7 +8,7 @@ body {
   color: #444;
 }
 
-/* Give headers playfair font */
+/* Give headers Josefin Slab font */
 h1,
 h2,
 h3 {
@@ -49,7 +49,7 @@ color: #304890;
 
 /* visited link */
 a:visited {
-  color: #A3BE8C;
+  color: #304890;
 }
 
 /* mouse over link */
